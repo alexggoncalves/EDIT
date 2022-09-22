@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+html {
+    font-family: 'Vollkorn', serif;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 12px 20px;
+    margin: 40px 4px 30px 4px;
+    text-decoration: none;
+    color: rgb(150,150,150);
+}
+
+nav a:hover {
+    background-color: rgb(150,150,150);
+    color: white;
+}
+
+.current-page {
+    background-color: black;
+    color: white;
+}
+
+
+section {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    background: none;
+    color: rgb(249, 249, 0);
+}
+
+.box {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 8px;
+}
+
+.banner {
+    width: 100%;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+p, li{
+    font-weight: 500;
+}
+
+.in-text--anchor{
+    color:  rgb(150,150,150);
+}
+
+.related-article-title{
+    font-weight: 800;
+}
+
+.related-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(200,200,2000);
+}
+
+.related-article img {
+    height :100%;
+    padding: 10px;
+}
+
+.related-article div {
+    margin: 20px 0 0 20px;
+}
