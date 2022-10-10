@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+@keyframes shake {
+    0% {transform: rotateZ(0deg);}
+    20% {transform: rotateZ(3deg);}
+    45% {transform: rotateZ(-3deg);}
+    70% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(0deg);}
+}
+
+body{
+    font-family: 'Inter', sans-serif;;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(213,114,105);
+    background: linear-gradient(90deg, rgba(213,114,105,1) 0%, rgba(150,147,223,1) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.card-translate {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.item-card {
+    transform-origin: center;
+    width: 380px;
+    background: rgb(198,63,40);
+    background: linear-gradient(45deg, rgba(198,63,40,1) 36%, rgba(228,193,50,1) 100%);
+    border-radius: 20px;
+    animation: shake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+header {
+    padding: 14px;
+}
+
+.nike-logo {
+    height: 15pt;
+}
+
+.footer {
+    background: white;
+}
+
+.item-price {
+    float: right;
+    color: white;
+    font-size: 15pt;
+    
+}
+
+.item-name {
+    color: white;
+    margin-top: 10%;
+    font-size: 14pt;
+    padding: 0 14px;
+}
+
+.item-description {
+    color: white;
+    padding: 10px 14px 0 14px;
+    font-size: 10pt;
+    margin: 0;
+}
+
+.card-body{
+    height: 100%;
+}
+
+.bg-text {
+    display: block;
+    color: rgba(255,255,255,0.15);
+    font-size: 220pt;
+    font-weight: 500;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    line-height: 110%;
+    background: linear-gradient(20deg, rgba(157,103,175,0.5) 0%, rgba(235,220,127,0.3) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.btm-bar {
+    height: 110px;
+    background-color: white;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttn-buy {
+    font-weight: 600;
+    font-size: 10pt;
+    text-decoration: none;
+    border: 2px solid rgb(141, 126, 201);
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 15px 0 12px 0;
+    color: rgb(141, 126, 201);
+    z-index: 1;
+}
+
+.bttn-buy:hover {
+    background-color: rgb(141, 126, 201);
+    color: white;
+}
+
+.item-category {
+    display: block;
+    color: rgb(167, 165, 165);
+    letter-spacing: 10px;
+    font-size: 10px;
+}
+
+.item-image {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 120%;
+    transform: translate(0,15px);
+    
+}

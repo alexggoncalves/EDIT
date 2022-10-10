@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+html, body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.board {
+    border: 1px solid gainsboro;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px dashed gainsboro;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: gainsboro;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: slateblue;
+    position: absolute;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+.ball-0 {
+    left: calc(10px + 9 * 40px);
+}
+
+.ball-1 {
+    left: calc(10px + 3 * 40px);
+}
+
+.ball-2 {
+    left: calc(10px + 4 * 40px);
+}
+
+.ball-3 {
+    left: calc(10px + 2 * 40px);
+}
+
+.ball-4 {
+    left: calc(10px + 6 * 40px);
+}
+
+.ball-5 {
+    left: calc(10px + 2 * 40px);
+}
+
+.ball-6 {
+    left: calc(10px + 3 * 40px);
+    transform: translateY(calc(4*40px));
+}
+
+.ball-7 {
+    left: calc(10px + 6 * 40px);
+    transform: translateY(calc(6*40px));
+}
+
+.ball-8 {
+    left: calc(10px + 1 * 40px);
+    transform: translateY(calc(2*40px));
+}
+
+.ball-9 {
+    left: calc(10px + 3 * 40px);
+    transform: translateY(calc(2*40px));
+}
+
+.ball-10 {
+    left: calc(10px + 8 * 40px);
+    transform: translateY(calc(4*40px));
+}
