@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.icon--align-right {
+    right: 0;
+}
+
+.t--align_r {
+    display: block;
+    text-align: end;
+    align-self: flex-end;
+}
+
+
+@import "partials/colors";
+@import "partials/buttons";
+@import "partials/grid";
+@import "partials/login";
+@import "partials/dashboard";
+

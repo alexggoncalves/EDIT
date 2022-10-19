@@ -1,0 +1,51 @@
+$columns : 14;
+$gap : 8px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    height: calc(100% - 40px);
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap;  
+}
+
+
+%col {
+    display: flex;
+    flex-wrap: wrap; 
+    min-height: 20px;
+    justify-content: center;
+}
+
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        @extend %col;
+        width: calc(100% / $columns * $i);
+        margin: 0;
+
+    }
+    @media screen and (max-width: 768px) {
+        .col-#{$i} {
+            width: 100%;
+        }
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: calc($gap*2);
+    margin: $gap;
+    width: 100%;
+
+    & > .module {
+        flex-grow: 1;
+    }
+}
+
+
